@@ -51,11 +51,18 @@ footer {
     padding: var(--main-padding);
 }
 
-/** @media only screen and (max-width: 550px) {
+@media only screen and (max-width: 550px) {
     .container {
-        width: 100%;
-        grid-template-columns: auto;
+        display: grid;
+        height: 97vh;
+        width: 60vh;
+        margin: 0 auto;
         grid-template-rows: 5fr 92fr 3fr;
-        grid-template-areas: "title" "text" "footer"
+        grid-template-areas: "title" "text" "footer";
+        grid-gap: 0.2rem;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        text-align: justify;
+        font-size: 14px;
     }
-} **/
+}
