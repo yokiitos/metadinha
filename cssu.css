@@ -63,7 +63,7 @@ footer {
 @media only screen and (max-width: 550p) {
     .container {
     height: 97vh;
-    margin: 10 15 10;
+    margin: 10px 15px;
     font-family: "Inter", sans-serif;
     }
 }
