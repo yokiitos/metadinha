@@ -12,7 +12,7 @@ html {
 .container {
     display: grid;
     height: 97vh;
-    margin: 0 auto;
+    margin: 0 15px;
     grid-template-rows: 5fr 90fr 5fr;
     grid-template-areas: "title" "text" "footer";
     grid-gap: 0.2rem;
