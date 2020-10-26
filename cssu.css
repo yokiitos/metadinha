@@ -1,7 +1,7 @@
-:root {
-    --main-radius: 5px;
-    --main-padding: 9px;
-}
+@font-face {
+    font-family: "arvo";
+    src: url("./Arvo-Regular.ttf") format("ttf");
+  }
 
 html {
     background-image: url(./Coraline\ 32.jpg);
@@ -12,15 +12,14 @@ html {
 .container {
     display: grid;
     height: 97vh;
-    width: 60vh;
     margin: 0 auto;
-    grid-template-rows: 5fr 92fr 3fr;
+    grid-template-rows: 5fr 90fr 5fr;
     grid-template-areas: "title" "text" "footer";
     grid-gap: 0.2rem;
     font-family: "Inter", sans-serif;
     font-weight: 600;
     text-align: justify;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 #title {
@@ -28,18 +27,17 @@ html {
     grid-area: title;
     text-align: center;
     align-content: center;
-    font-size: 25px;
     color: #cd87e4;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
+    border-radius: 5px;
 }
 
 #text {
     background: #bca5e2d5;
     grid-area: text;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
+    border-radius: 5px;
+    padding: 5px 18px;
     color: #07234d;
+    font-size: 12px;
 }
 
 footer {
@@ -48,8 +46,8 @@ footer {
     text-align: center;
     font-style: italic;
     color: #7652b2;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
+    border-radius: 5px;
+    padding: 9px;
 }
 
 @viewport {
@@ -62,17 +60,26 @@ footer {
     zoom: 1.0;
 }
 
+@media only screen and (max-width: 550p) {
+    .container {
+    height: 97vh;
+    margin: 10 8 10;
+    font-family: "Inter", sans-serif;
+    }
+}
+
+/**
 @media only screen and (max-width: 550px) {
     .container {
         display: grid;
         height: 97vh;
-        margin: 15 20;
-        grid-template-rows: 5fr 92fr 3fr;
+        margin: 10 8 10;
+        grid-template-rows: 5fr 90fr 5fr;
         grid-template-areas: "title" "text" "footer";
         grid-gap: 0.4rem;
         font-family: "Inter", sans-serif;
         font-weight: 600;
         text-align: justify;
-        font-size: 34px;
+        font-size: 18px;
     }
-}
+} **/
