@@ -1,0 +1,61 @@
+:root {
+    --main-radius: 5px;
+    --main-padding: 9px;
+}
+
+html {
+    background-image: url(./Coraline\ 32.jpg);
+    background-size: cover;
+    background-position: 50% 45%;
+}
+
+.container {
+    display: grid;
+    height: 97vh;
+    width: 60vh;
+    margin: 0 auto;
+    grid-template-rows: 5fr 92fr 3fr;
+    grid-template-areas: "title" "text" "footer";
+    grid-gap: 0.2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    text-align: justify;
+    font-size: 14px;
+}
+
+#title {
+    background: #7652b2;
+    grid-area: title;
+    text-align: center;
+    font-size: 25px;
+    color: #cd87e4;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+
+#text {
+    background: #bca5e2d5;
+    grid-area: text;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    color: #07234d;
+}
+
+footer {
+    background: #bf84d6;
+    grid-area: footer;
+    text-align: center;
+    font-style: italic;
+    color: #7652b2;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+
+/** @media only screen and (max-width: 550px) {
+    .container {
+        width: 100%;
+        grid-template-columns: auto;
+        grid-template-rows: 5fr 92fr 3fr;
+        grid-template-areas: "title" "text" "footer"
+    }
+} **/
