@@ -11,8 +11,9 @@
 </head>
 
 <body>
+    <audio class="audio" src="./coralineexploration.mp3" autoplay loop></audio>
     <div class="alert show">
-        <span class="msg">Aumenta o volume!<br /><audio src="./coralineexploration.mp3" autoplay loop></audio></span>
+        <span class="msg">Aumenta o volume!</span>
         <div class="close-btn">
             <span class="fas fa-times"></span>
         </div>
@@ -58,6 +59,7 @@
             $('.alert').addClass("hide");
             $('.alert').removeClass("show");
         });
+        $("audio").prop("volume", 0.5);
     </script>
 </body>
 
