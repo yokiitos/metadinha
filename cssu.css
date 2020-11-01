@@ -10,10 +10,6 @@ html {
     background-attachment: fixed;
 }
 
-body {
-    overflow: hidden;
-}
-
 .alert {
     background: #1c0727;
     box-shadow: 4px 5px 10px 0px #22196d;
